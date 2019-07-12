@@ -1,4 +1,5 @@
 var figlet = require("figlet");
+var chalk = require("chalk");
 
 figlet("Hello fei!", function(err, data) {
   if (err) {
@@ -9,11 +10,12 @@ figlet("Hello fei!", function(err, data) {
   console.log(data);
 });
 
-
 console.log(
-  figlet.textSync("Boo!", {
-    font: "Ghost",
-    horizontalLayout: "default",
-    verticalLayout: "default"
-  })
+  chalk.green(
+    figlet.textSync("Boo!", {
+      font: "Ghost",
+      horizontalLayout: "default",
+      verticalLayout: "default"
+    })
+  )
 );
