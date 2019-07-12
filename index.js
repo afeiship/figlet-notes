@@ -8,3 +8,12 @@ figlet("Hello fei!", function(err, data) {
   }
   console.log(data);
 });
+
+
+console.log(
+  figlet.textSync("Boo!", {
+    font: "Ghost",
+    horizontalLayout: "default",
+    verticalLayout: "default"
+  })
+);
